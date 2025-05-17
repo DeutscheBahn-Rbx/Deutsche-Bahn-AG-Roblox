@@ -3,22 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deutsche Bahn AG Roblox</title>
+  <title>Deutsche Bahn Info</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Willkommen auf meiner Webseite</h1>
-  <p>Klicke den Button und sag Hallo!</p>
-  <button onclick="zeigeBegrüßung()">Login</button>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🚆 DB Reise</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="fahrplan.html">Fahrplan</a></li>
+        <li><a href="#">Tickets</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <script src="script.js"></script>
+  <section class="hero">
+    <h1>Willkommen bei DB Reise</h1>
+    <p>Planen Sie Ihre Fahrt einfach, schnell und zuverlässig</p>
+    <button class="play-button">▶ Jetzt informieren</button>
+  </section>
 
-  <link rel="manifest" href="manifest.json">
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js');
-  }
-</script>
+  <section class="cards">
+    <div class="card">
+      <h3>Fahrpläne</h3>
+      <p>Erfahren Sie alles über aktuelle Verbindungen und Abfahrtszeiten.</p>
+    </div>
+    <div class="card">
+      <h3>Tickets</h3>
+      <p>Buchen Sie Ihre Reise bequem online oder per App.</p>
+    </div>
+    <div class="card">
+      <h3>Services</h3>
+      <p>Von WLAN bis Fahrradmitnahme – wir bieten mehr.</p>
+    </div>
+  </section>
 
+  <footer>
+    <p>© 2025 Deutsche Bahn – Impressum – Datenschutz</p>
+  </footer>
+
+  <script>
+    document.querySelector('.play-button').addEventListener('click', () => {
+      alert("Hier könnte ein Video oder Info-Link geöffnet werden.");
+    });
+  </script>
 </body>
 </html>
